@@ -1,39 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smooth Scrolling</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <div class="navbar">
-        <div class="logos">
-            <h1>LOGO</h1>
-        </div>
-        <div class="nav">
-            <a href="#box1" class="nav-link">BOX 1</a>
-            <a href="#box2" class="nav-link">BOX 2</a>
-            <a href="#box3" class="nav-link">BOX 3</a>
-            <a href="#box4" class="nav-link">BOX 4</a>
-        </div>
-    </div>
-    <div class="container">
-        <div class="box1" id="box1">
-            <a href="#" class="section1">BOX 1</a>
-        </div>
-        <div class="box2" id="box2">
-            <a href="#" class="section2">BOX 2</a>
-        </div>
-        <div class="box3" id="box3">
-            <a href="#" class="section3">BOX 3</a>
-        </div>
-        <div class="box4" id="box4">
-            <a href="#" class="section4">BOX 4</a>
-        </div>
-    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>faulanspurba</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
 
-<script src="script/app2.js" ></script>
-</body>
+      body {
+        font-family: "Poppins";
+      }
+
+      .container {
+        font-size: 4rem;
+        font-weight: 600;
+        height: 100vh;
+        overflow: hidden;
+        background: rgb(34, 34, 34);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      p {
+        color: #fff;
+      }
+
+      span {
+        animation: blink 1s infinite;
+      }
+
+      @keyframes blink {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p>still working . . . <span>I</span></p>
+    </div>
+  </body>
 </html>

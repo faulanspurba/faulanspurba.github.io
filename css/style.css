@@ -1,107 +1,37 @@
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-  overflow-x: hidden;
-}
-
-.navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100vw;
-  height: 51px;
-  background-color: #282a35;
-  position: fixed;
-  z-index: 10;
-  color: white;
-  font-family: 'Viga';
-  text-decoration: none;
-}
-
-.navbar .logos {
-  width: 30%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.navbar .logos h1 {
-  cursor: pointer;
-}
-
-.navbar .nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  width: 70%;
-}
-
-.navbar .nav a {
-  color: white;
-  text-decoration: none;
+  font-family: "Poppins";
 }
 
 .container {
-  padding-top: 50px;
-}
-
-.container .box1,
-.container .box2,
-.container .box3,
-.container .box4 {
+  font-size: 4rem;
+  font-weight: 600;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  overflow: hidden;
+  background: rgb(34, 34, 34);
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: -webkit-sticky;
-  position: sticky;
+  align-items: center;
+  justify-content: center;
 }
 
-.container .box1 a,
-.container .box2 a,
-.container .box3 a,
-.container .box4 a {
-  margin-top: 70px;
-  color: white;
-  font-size: 2rem;
-  font-family: 'Viga';
-  text-decoration: none;
+p {
+  color: #fff;
 }
 
-.container .box1 {
-  background-color: #ff4800;
+span {
+  animation: blink 1s infinite;
 }
 
-.container .box2 {
-  background-color: #15fc00;
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
-
-.container .box3 {
-  background-color: aqua;
-}
-
-.container .box4 {
-  background-color: yellow;
-}
-/*# sourceMappingURL=style.css.map */
